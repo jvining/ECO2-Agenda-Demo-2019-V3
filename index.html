@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<title>ECO2 Agenda Multi-Select Demo V2</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta name="author" content="https://github.com/jvining">
+	
+	<!-- Open Graph -->
+ 	<meta property="og:url" content="https://jvining.github.io/ECO2-Agenda-Multi-Select-Demo-V2" />
+	<meta property="og:type" content="Product" />
+	<meta property="og:title" content="ECO2 Agenda Multi-Select Demo V2" />
+	<meta property="og:description" content="ECO2 Agenda Multi-Select Demo V2, built on Starter Bootstrap Template (http://bit.ly/1SnymWq)" />
+	<meta property="og:image" content="https://place-hold.it/600x315/563d7c/fff/000&text=ECO2-Agenda-Multi-Select-Demo-V2" />
+
+ 	<!-- CSS -->	
+	<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABMLAAATCwAAAAAAAAAAAAAAAAAAeTxSAHk6UwJ5PFcJeTtYC3o7WAt5O1gLejtYC3o7WAt6O1gLejtYC3k7WAt6PFcJfzpUAn88UwAAAAAAgD9ZAIA/WRh+PleEfT1Wt3w9Vrp8PVa5fD1WuXw9Vrl8PVa5fD1WuXw9Vrl8PVa6fT1WuH4+V4mAP1gcg0FbAHw/WAN+PliPfT1W/3w9Vv98PVb/eztV/3s7Vf97O1X/eztV/3s8Vf98PVb/fD1W/3w9Vv99PVb/fz5YmX0/VwaBP1kUfj5XyHw9Vv98PVb/f0Fa/41Ta/+OVW3/jlVt/45Vbf+HTGP/fDxW/3s8Vf98PVb/fD1W/34+V9B/PlcZgj9YF34+WMt8PVb/eztU/5Nacv/p3uP/6+Pm/+jd4v/o3eL/5trf/8KjsP+FSGH/ezxV/3w9Vv9+PlfTgD1XG4I/WBZ+PljLfD1W/3o7VP+WXXX/9fHz/7mVo/+VXXT/ll92/7KLmf/28vP/sYqa/3o5U/98PVb/fj5X04A9VxuCP1gWfj5Yy3w9Vv96O1T/ll11//Tw8v+kdYn/djJO/3c1UP+ERV3/6uDj/7+grf96OVP/fD1W/34+V9OAPVcbgj9YFn4+WMt8PVb/ejtU/5Vddf/18PL/yK64/6yBk/+ugpX/xqm0/+rg5P+can//ejpU/3w9Vv9+PlfTgD1XG4I/WBZ+PljLfD1W/3o7VP+VXXX/9fHz/97P1P/Nsr7/0LbC/+7l6f/HqrX/fj5Y/3w9Vv98PVb/fj5X04A9VxuCP1gWfj5Yy3w9Vv96O1T/ll11//Tw8v+md4v/eDRQ/3k2Uv+sgpP/7+jr/5JZcf97O1T/fD1W/34+V9OAPVcbgj9YFn4+WMt8PVb/ejtU/5Zddf/18fP/uJSi/5Nbcv+VXnT/xKey//Tv8f+UW3T/eztU/3w9Vv9+PlfTgD1XG4I/WBZ+PljLfD1W/3s7VP+TWnL/6uDk/+zk5//p3uL/6d/j/+ne4/+7maf/gEFa/3w9Vv98PVb/fj5X04A9VxuBP1gWfj5Xynw9Vv98PVb/gEFb/45TbP+QVW7/kFVv/49Vb/+JTWb/fT1W/3w9Vv98PVb/fD1W/34+V9KAPVcafz1ZCH4+V6h8PVb/fD1W/3w9Vv97O1X/eztU/3s7VP97O1T/ezxV/3w9Vv98PVb/fD1W/3w9Vv9+Pleyfz5XDIRAWQCAP1kyfj5XuX09VuJ8PVbkfD1W43w9VuN8PVbjfD1W43w9VuN8PVbjfD1W5H09VuJ+Ple9fz9YOYNCXQB1OlsAAAD/AH0+VxJ9PlYrfT1WLX09Vi19PVYtfT1WLX09Vi19PVYtfT1WLX09Vi19PlYrfj9XE4JHUgB+QFQAwAMAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAgAEAAA==" />	
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+ 	<link href="css/open-sans.css" rel="stylesheet" type="text/css">
+ 	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ 
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand text-secondary text-white" href="#">ECO2 Agenda Multi-Select Demo V2</a> 
+			<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item mr-2"><a class="nav-link" href="#">Agenda</a></li>
+					<li class="nav-item mr-2"><a class="nav-link" href="#">Speaker</a></li>
+					<li class="nav-item mr-2"><a class="nav-link" href="#">Sponsors</a></li>
+					<li class="nav-item mr-2"><a class="nav-link" href="#">Content</a></li>
+					<li class="nav-item mr-2"><a class="nav-link" href="#">About</a></li>
+					<li class="nav-item mr-2"><a class="nav-link btn btn-sm btn-danger text-white" href="#">Register Now</a></li>
+				</ul>
+			</div>
+ 		</div>
+  	</nav>
+
+	<div id="filter-menu" hidden>
+		<div class="container mt-5 py-5">
+			<div class="row mt-3">
+				<div class="col-md-8 offset-md-2 pb-5">
+ 				  	<form>
+						<div class="form-group pt-3">
+ 							<h4 class="text-center text-white">Filter & Sort Session Options  <a class="ml-5 pt-5 fa-lg filter_button"><i class="fa fa-times-circle" aria-hidden="true"></i></a></h4>
+ 							<label class="text-bold text-white">Expand &amp; View Session Details</label>
+							<ul class="list-unstyled">
+								<li class="mb-2 px-4"><a class="bg-secondary text-white px-3 py-2 m-2" href="#" id="toggle">+ Expand All Session Details</a></li>
+							</ul>
+							<label class="text-bold text-white">Sort Sesssion Formats</label>
+			  				<div class="filter-menu">
+								<label class="bg-primary px-3 py-2 m-2 text-white" for="bg-info">Keynotes <input type="checkbox" name="group1" value="tracktype-keynote" checked></label> 
+								<label class="bg-success px-3 py-2 m-2 text-white" for="bg-success">Round Tables <input type="checkbox" name="group1" value="tracktype-round-table" checked></label>
+								<label class="bg-danger px-3 py-2 m-2 text-white" for="bg-danger">Panel Discussions <input type="checkbox" name="group1" value="tracktype-panel-discussion" checked></label>
+								<label class="bg-warning px-3 py-2 m-2 text-white" for="bg-danger">Break / Meal  <input type="checkbox" name="group1" value="tracktype-break-meal" checked></label>
+							</div>
+							<ul class="list-unstyled">
+								<label class="bg-secondary px-4 py-2 m-2 text-white" for="bg-secondary"> <a class="filter-button-reset">Reset</a></label>
+ 							</ul>
+ 							<label class="text-bold text-white">Skip to Track</label>
+							<ul class="list-unstyled">
+								<li class="py-2"><a class="bg-primary text-white px-3 py-2 m-2 scroll" data-offset="220" href="#Track-A">Marketplaces &amp; Globalization</a></li>
+								<li class="py-2"><a class="bg-success text-white px-3 py-2 m-2 scroll" data-offset="220" href="#Track-B">Reimagining Online And Instore</a></li>
+								<li class="py-2"><a class="bg-warning text-white px-3 py-2 m-2 scroll" data-offset="220" href="#Track-C">Customer Acquisition And Conversion Optimization</a></li>
+								<li class="py-2"><a class="bg-danger  text-white px-3 py-2 m-2 scroll" data-offset="220" href="#Track-D">Marketing Tomorrow's Customers</a></li>
+							</ul>
+							<ul class="list-unstyled mt-3">
+								<li class="py-2"><a class="bg-secondary text-white px-3 py-2 m-2 scroll" data-offset="220" href="#content">Back to Top</a></li>
+							</ul>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="content">
+ 	
+		<div class="container container mt-5 pt-4">
+			<div class="row">
+				<div class="col-md-12">
+		   			<h1>Day Two: Revolutionizing Retail Experiences </h1>
+					<h3>February 20th, 2019</h3>
+					<p>It’s time for the main event. Our speakers are revolutionizing retail, and share their tactics around growth, disruption and unified commerce. Here you’ll gain fresh ideas treally drive sustainable growth for your retail.</p>	
+ 				   </div>
+				<div class="col-md-12 agenda-day-nav">
+					<ul class=" nav justify-content-center">
+						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2" href="#">SEARCH</a></li>
+						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2" href="#">EMAIL + RETENTION </a></li>
+						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2" href="#">TECH </a></li>
+						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2" href="#">UX + Merchandising  </a></li>
+						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2 active" href="#">Day Two</a></li>
+						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2" href="#">Day Three</a></li>
+						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2" href="#">Day Four</a> </li>
+						<li class="list-inline-item ml-5 mb-2 pl-5"><a class="btn btn-secondary text-white ml-5 filter_button">Filters <i class="fa fa-th" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+ 
+ 		<div class="container mt-3 px-4" id="agenda-day-container">
+ 			<div class="row">
+				<div class="col-md-12 card tracktype-break-meal bg-warning my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_001" data-toggle="collapse">
+						<h3 class="card-title">Grab N GBreakfast In The Expo. Registration Open &amp; Sponsored By Zaius</h3>
+						<h5 class="card-time">7:30 am - 7:55 am</h5>
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><span class="badge badge-dark">Break/Meal</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 card p-0">
+					<div class="card-header mb-0" data-target="#collapse_002" data-toggle="collapse">
+						<h3 class="card-title">Unlocking The Future Of Customer Engagement</h3>
+						<h5 class="card-time">7:55 am - 8:05 am</h5>
+						<p class="card-speakers">Speakers: <a href="#"><strong>Greg Revelle</strong> - CMO, <strong>Kohl's</strong></a></p>
+					</div>
+					<div class="collapse" data-parent="#collapse_002" id="collapse_002">
+						<div class="card-body">
+							<p>Today’s customers expect brands tdeliver unique, relevant experiences and connect with them in a way that resonates with them personally. Kohl’s is doubling down on personalization tensure
+							 its millions of customers nationwide feel heard, recognized and engaged, all while delivering the seamless	shopping journey they crave. In this session, Greg will share an inside look at how
+							 Kohl’s is delivering on its purpose tinspire and empower families tlead fulfilled lives through a personalization strategy that is driving traffic and customer conversion.</p>
+							<ul>
+								<li>Building an agile marketing organization with a customer-centric focus</li>
+								<li>Developing a seamless omnichannel experience that deepens the connection with the customer</li>
+								<li>Using data-driven insights tdeliver more relevant, personalized experiences for customers</li>
+								<li>Leveraging best-in-class technology tconstantly adapt tcustomer behavior and drive optimal results</li>
+							</ul>
+							<div class="row mt-2">
+								<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+									<div class="card">
+										<div class="speaker-image-block">
+											<img class="img-responsive center-block" alt="img" src="img/speakers/greg-revelle.png" style=" height: 200px; width:100%; ">
+											<img class="img-responsive center-block" alt="img" src="img/logos/logo-0003-kohls.jpg">
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Greg Revelle</h5>
+											<p class="card-text small">CM<br><strong>Kohl's</strong></p>
+											<a class="btn btn-sm btn-primary" href="#">See Bio</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 pl-md-0">
+					<div class="col-md-12 card tracktype-panel-discussion bg-danger my-2 p-0">
+						<div class="card-header mb-0" data-target="#collapse_03b" data-toggle="collapse">
+							<h3 class="card-title">eTail First Timers Meet-Up!</h3>
+							<h5 class="card-time">9:25 am - 10:05 am</h5>
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item"><span class="badge badge-dark">Panel Discussion</span></li>
+							</ul>
+						</div>
+						<div class="collapse" data-parent="#collapse_03b" id="collapse_03b">
+							<div class="card-body">
+								<p>First Time at eTail? Meet in the Social Lounge in the back of the Expo, and get some super eTail swag!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 pr-md-0">
+					<div class="col-md-12 card tracktype-keynote bg-primary my-2 p-0">
+						<div class="card-header mb-0" data-target="#collapse_03a" data-toggle="collapse">
+							<h3 class="card-title">eTail's Grand Opening Mardi Gras Celebration In The Expo!</h3>
+							<h5 class="card-time">9:25 am - 10:05 am</h5>
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item"><span class="badge badge-dark">Keynote</span></li>
+							</ul>
+						</div>
+						<div class="collapse" data-parent="#collapse_03a" id="collapse_03a">
+							<div class="card-body">
+								<p>Laissez les bon temps rouler at eTail! Kick off your best eTail ever with our 20th anniversary Mardi Gras celebration in the Expo! Discover the most cutting edge tech, all in one
+								 amazing quarter of our conference space.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 card my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_004" data-toggle="collapse">
+						<h3 class="card-title">Opening Remarks &amp; Icebreaker</h3>
+						<h5 class="card-time">8:20 am - 8:40 am</h5>
+						<p class="card-moderator">Moderator: <a href="#"><strong>Megan Kessler</strong> - Program Director, <strong>eTail West</strong></a></p>
+						<p class="card-speakers">Speakers: <a href="#"><strong>Kristin Schoenstein</strong> - Program Director, <strong>eTail West</strong></a></p>
+					</div>
+					<div class="collapse" data-parent="#collapse_004" id="collapse_004">
+						<div class="card-body">
+							<p>Hi there! We are your Program Directors and ready tkick off eTail with you.</p>
+							<div class="row mt-2">
+								<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+									<div class="card">
+										<div class="speaker-image-block">
+											<img class="img-responsive center-block" alt="img" src="img/speakers/megan-kessler.jpg">
+											<img class="img-responsive center-block" alt="img" src="img/logos/logo-0010-etaill-west.jpg">
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Megan Kessler</h5>
+											<p class="card-text small">Program Director<br>
+											<strong>eTail West</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+									<div class="card">
+										<div class="speaker-image-block">
+											<img class="img-responsive center-block" alt="img" src="img/speakers/kristin-schoenstein.jpg">
+											<img class="img-responsive center-block" alt="img" src="img/logos/logo-0010-etaill-west.jpg">
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Kristin Schoenstein</h5>
+											<p class="card-text small">Program Director<br>
+											<strong>eTail West</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+ 
+ 			<div class="row">
+				<div class="col-md-4 pl-md-0">
+					<div class="col-md-12 card tracktype-keynote bg-primary my-2 p-0">
+						<div class="card-header mb-0" data-target="#collapse_13a" data-toggle="collapse"> 
+							<h3 class="card-title">How Holland America is Using Machine Learning to Deliver Extreme Personalization</h3>
+							<h5 class="card-time">10:15 AM - 11:50 PM</h5>
+							<p class="card-moderator">Speaker: <a href="#"><strong>Justin Hughes</strong> Head of Product <strong>Layer</strong></a></p>
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item"><span class="badge badge-dark">Keynote</span></li>
+							</ul>
+						</div>
+						<div class="collapse" data-parent="#collapse_13a" id="collapse_13a">
+							<div class="card-body">
+								<p>Customers make decisions about a brand in less than 60 seconds – if the message isn’t relevant, they move on. To drive impactful customer engagement, marketers must deliver compelling, personalized experiences in real-time. But creating rich, immersive experiences across mediums goes well-beyond the ability of the human thought process.</p>
+								<p>Join Therron Hofsetz, IT Director for Digital Marketing, Holland America/Seabourn Cruises and Mark Sucrese, Epsilon’s VP of Digital Marketing &amp; AI to hear how Seabourn Cruises is leveraging machine learning and cognitive analytics to create personalized digital programs that rival the travel experience. Attendees will learn how to plan and build sophisticated programs while managing the creative and content generation required to deliver extreme personalization.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="col-md-4 p-md-0">
+					<div class="col-md-12 card tracktype-panel-discussion bg-danger my-2 p-0">
+						<div class="card-header mb-0" data-target="#collapse_13b" data-toggle="collapse"> 
+							<h3 class="card-title">Ending Retail’s Violent Silence</h3>
+							<h5 class="card-time">10:15 AM - 11:50 PM</h5>
+							<p class="card-moderator">Speaker: <a href="#"><strong>Justin Hughes</strong> Head of Product <strong>Layer</strong></a></p>
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item"><span class="badge badge-dark">Panel Discussion</span></li>
+							</ul>
+						</div>
+						<div class="collapse" data-parent="#collapse_13b" id="collapse_13b">
+							<div class="card-body">
+								<p>People are wired for human connection and show a biological aversion to isolation… yet retailers often isolate their customers by “expediting” experiences. What kind of relationship does a self-checkout line create, for example? An IVR?</p>
+								<p>When a customer engages with a brand, she’s conscious of a specific, and often emotional, need—and how a retailer responds in her moment of vulnerability matters. In a time of increasing commoditization, the customer experience is the most important thing a company owns.</p>
+								<p>Implementing a conversational commerce strategy doesn’t have to be a major cost center. Retailers can stop the silence and build customer lifetime value 24/7 when they:</p>
+ 
+							</div>
+						</div>
+					</div>
+				</div>
+  
+				<div class="col-md-4 pr-md-0">
+					<div class="col-md-12 card tracktype-round-table bg-success my-2 p-0">
+						<div class="card-header mb-0" data-target="#collapse_13c" data-toggle="collapse"> 
+							<h3 class="card-title">Activity Is Brand: Customer Engagement Is The Essential Measure Of Brand</h3>
+							<h5 class="card-time">10:15 AM - 11:50 PM</h5>
+							<p class="card-moderator">Speaker: <a href="#"><strong>Matt Roche</strong> CEO <strong>Extole</strong></a></p>
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item"><span class="badge badge-dark">Round Table</span></li>
+							</ul>
+						</div>
+						<div class="collapse" data-parent="#collapse_13c" id="collapse_13c">
+							<div class="card-body">
+								<p>The health of your brand is how active your customers are. Activity is not just buying. It is what customers do on your behalf. Today, leading brands are identifying, engaging, and rewarding their customers to drive awareness, acquire new customers, and build loyalty. In his session, Matt will share:</p>
+								<ul>
+									<li>How customers feel about your brand when you're not there</li>
+									<li>What active customers really look like</li>
+									<li>Approaches for immediately building on the love your customers have for you</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+ 
+			<div class="row">
+				<div class="col-md-12 card tracktype-break-meal bg-warning my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_0a4" data-toggle="collapse"> 
+						<h3 class="card-title">Event Lunch Break</h3>
+						<h5 class="card-time">12:00 pm - 1:30 pm</h5>
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><span class="badge badge-dark">Break/Meal</span></li>
+						</ul>
+					</div>
+					<div class="collapse" data-parent="#collapse_0a4" id="collapse_0a4">
+						<div class="card-body">
+							<p>Get outside, soak up the sun, and have all the learnings from the morning really sink in!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+ 
+			<div class="row card bg-primary my-3 p-3">
+				<h4 class="text-secondary my-2" id="Track-A">Track A: Marketplaces &amp; Globalization</h4>
+				<div class="col-md-12 card my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_005" data-toggle="collapse">
+						<h3 class="card-title">Chairperson's Opening Remarks</h3>
+						<h5 class="card-time">2:05 pm - 2:15 pm</h5>
+					</div>
+				</div>
+				<div class="col-md-12 card tracktype-round-table bg-success my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_006" data-toggle="collapse">
+						<h3 class="card-title">Fireside Chat: Tips And Tricks TMeet The Customer On Amazon</h3>
+						<h5 class="card-time">2:15 pm - 2:40 pm</h5>
+						<p class="card-speakers">Speakers: <a href="#"><strong>Katrina Plummer</strong> - eCommerce Category Marketing Lead, US, <strong>Mondelēz International</strong></a></p>
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><span class="badge badge-dark">Round Table</span></li>
+						</ul>
+					</div>
+					<div class="collapse" data-parent="#collapse_006" id="collapse_006">
+						<div class="card-body">
+							<p>Fireside Chat: Tips And Tricks TMeet The Customer On Amazon</p>
+							<p>Sales on Amazon are growing as customers are increasingly seeking convenience, value and a seamless digital experience. But winning on Amazon is not as simple as taking your in-store
+							 portfoliand listing it online. Listen in as Katrina gives tips and tricks as thow to:</p>
+							<ul>
+								<li>Reconsider your portfolifor Amazon profitability</li>
+								<li>Reinvent branded content tensure the right contextual information is being surfaced tthe shopper</li>
+								<li>Create the right Amazon search strategy tensure your products can be found</li>
+							</ul>
+							<div class="row mt-2">
+								<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+									<div class="card">
+										<div class="speaker-image-block">
+											<img class="img-responsive center-block" alt="img" src="img/speakers/katrina-plummer.jpg">
+											<img class="img-responsive center-block" alt="img" src="img/logos/logo-0002-mondolez.jpg">
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Katrina Plummer</h5>
+											<p class="card-text small">eCommerce Category Marketing Lead, US<br>
+											<strong>Mondelēz International</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 card tracktype-panel-discussion bg-danger my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_007" data-toggle="collapse">
+						<h3 class="card-title">Marketing to Millennial Consumers Across the Globe</h3>
+						<h5 class="card-time">2:40 pm - 3:00 pm</h5>
+						<p class="card-speakers">Speakers: <a href="#"><strong>Nick Molnar</strong> - CEO, <strong>Afterpay</strong></a></p>
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><span class="badge badge-dark">Panel Disccussion</span></li>
+						</ul>
+					</div>
+					<div class="collapse" data-parent="#collapse_007" id="collapse_007">
+						<div class="card-body">
+							<p>Being a millennial himself, Nick Molnar understands that these consumers, wherever they are in the world, came of age during a global financial crisis and thus have an aversion tcredit cards and taking on credit-card debt. Due tthis crisis, along with other factors such as extreme U.S. student loan
+							debt, millennials avoid taking on more than absolutely necessary and have a strong preference for spending their own money. Brands and retailers need tunderstand that these consumers have redefined purchasing behavior, i.e. choosing trent instead of buy and tmake purchases with current monies instead
+							of future monies. This presentation will examine this global millennial consumer and how Afterpay is helping brands and retailers navigate and engage this important demographic.</p>
+							<div class="row mt-2">
+								<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+									<div class="card">
+										<div class="speaker-image-block">
+											<img class="img-responsive center-block" alt="img" src="img/speakers/nick-molnar.png">
+											<img class="img-responsive center-block" alt="img" src="img/logos/logo-0007-afterpay.jpg">
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Nick Molnar</h5>
+											<p class="card-text small">CE<br>
+											<strong>Afterpay</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row card bg-success my-3 p-3">
+				<h4 class="text-secondary my-2" id="Track-B">Track B: Reimagining Online And Instore</h4>
+ 				<div class="col-md-12 card my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_008" data-toggle="collapse">
+						<h3 class="card-title">Chairperson's Opening Remarks</h3>
+						<h5 class="card-time">2:05 pm - 2:15 pm</h5>
+					</div>
+					<div class="collapse" data-parent="#collapse_008" id="collapse_008">
+						<div class="card-body">
+							<p>Executive Presenter, Dosh</p>
+							<div class="row mt-2">
+ 								<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+									<div class="card">
+										<div class="speaker-image-block">
+											<img class="img-responsive center-block" alt="img" src="img/speakers/andrei-faji.png">
+											<img class="img-responsive center-block" alt="img" src="img/logos/logo-0009-dosh.jpg">
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Andrei Faji</h5>
+											<p class="card-text small">Director of Marketing<br>
+											<strong>Dosh</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+									<div class="card">
+										<div class="speaker-image-block">
+											<img class="img-responsive center-block" alt="img" src="img/speakers/nick-molnar.png">
+											<img class="img-responsive center-block" alt="img" src="img/logos/logo-0007-afterpay.jpg">
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Nick Molnar</h5>
+											<p class="card-text small">CE<br>
+											<strong>Afterpay</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 card tracktype-panel-discussion bg-danger my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_009" data-toggle="collapse">
+						<h3 class="card-title">Quest For Causality: The Digital Transformation Of GameStop</h3>
+						<h5 class="card-time">2:15 pm - 2:40 pm</h5>
+						<p class="card-speakers">Speakers: <a href="#"><strong>Jim Edgett</strong> - Head of Digital Ecosystem &amp; Channels, <strong>GameStop</strong></a></p>
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><span class="badge badge-dark">Panel Disscussion</span></li>
+						</ul>
+					</div>
+					<div class="collapse" data-parent="#collapse_009" id="collapse_009">
+						<div class="card-body">
+							<p>GameStop is in the midst of a business transformation, shifting the company from a videgame-only, brick-and-mortar retailer ta family of specialty retail brands, known for the most popular
+							technologies. Navigating a business transformation, let alone knowing when it’s the right time ttransform and get buy-in from senior leadership, is tricky business. Join Jim Edgett, Head of
+							Digital Ecosystem &amp; Channels, as he showcases lessons learned from Gamestop’s omnichannel journey.</p>
+							<div class="row mt-2">
+								<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+									<div class="card">
+										<div class="speaker-image-block">
+											<img class="img-responsive center-block" alt="img" src="img/speakers/jim-edgett.png">
+											<img class="img-responsive center-block" alt="img" src="img/logos/logo-0004-gamestop.jpg">
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Jim Edgett</h5>
+											<p class="card-text small">Head of Digital Ecosystem &amp; Channels<br>
+											<strong>GameStop</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 card tracktype-round-table bg-success my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_010" data-toggle="collapse">
+						<h3 class="card-title">Personalization as a Strategy - Use Cases for Enabling Customer Experience and ROI</h3>
+						<h5 class="card-time">2:40 pm - 3:00 pm</h5>
+						<p class="card-speakers">Speakers: <a href="#"><strong>Meyar Sheik</strong> - CE&amp; Co-Founder, <strong>Certona</strong></a></p>
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><span class="badge badge-dark">Round Table</span></li>
+						</ul>
+					</div>
+					<div class="collapse" data-parent="#collapse_010" id="collapse_010">
+						<div class="card-body">
+							<p>Join this session tlearn how leading retailers in the beauty, fast fashion, home improvement, active wear, outdoor sports gear, B2B and grocery industries are leveraging personalization
+							tactics tincrease revenue and improve the customer experience. Discover real uses cases that drive real	results.</p>
+							<div class="row mt-2">
+								<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+									<div class="card">
+										<div class="speaker-image-block">
+											<img class="img-responsive center-block" alt="img" src="img/speakers/meyar-sheik.jpg">
+											<img class="img-responsive center-block" alt="img" src="img/logos/logo-0008-certona.jpg">
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Meyar Sheik</h5>
+											<p class="card-text small">CE&amp; Co-Founder<br>
+											<strong>Certona</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row card bg-warning my-3 p-3">
+				<h4 class="text-secondary my-2" id="Track-C">Track C: Customer Acquisition And Conversion Optimization</h4>
+				<div class="col-md-12 card my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_011" data-toggle="collapse">
+						<h3 class="card-title">Chairperson's Opening Remarks</h3>
+						<h5 class="card-time">2:05 pm - 2:15 pm</h5>
+						<p class="card-speakers">Speakers: <a href="#"><strong>Sai Koppala</strong> - CMO, <strong>SheerID</strong></a></p>
+					</div>
+				</div>
+				<div class="col-md-12 card tracktype-keynote bg-primary my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_012" data-toggle="collapse">
+						<h3 class="card-title">Fireside Chat: If You Build It, They Will Come - Listening to Customer Demand</h3>
+						<h5 class="card-time">2:15 pm - 2:40 pm</h5>
+						<p class="card-speakers">Speakers: <a href="#"><strong>Raphael Weishaupt</strong> - SVP, Brand &amp; Acquisition Marketing, <strong>FTD</strong></a></p>
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><span class="badge badge-dark">Keynote</span></li>
+						</ul>
+					</div>
+					<div class="collapse" data-parent="#collapse_012" id="collapse_012">
+						<div class="card-body">
+							<ul>
+								<li>Producing tech interactions sthe customer feels shopping is “time well spent” versus “time saved”</li>
+								<li>Listening tyour communities and taking their lead on what products are hot and what are not</li>
+								<li>Building meaningful experiences that are thoughtful and not overdone tmake the customer feel catered to</li>
+								<li>A closer relationship for better experience and products across channel—a mutual benefit for both customer and retailer</li>
+							</ul>
+							<div class="row mt-2">
+								<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+									<div class="card">
+										<div class="speaker-image-block">
+											<img class="img-responsive center-block" alt="img" src="img/speakers/raphael-weishaupt.png">
+											<img class="img-responsive center-block" alt="img" src="img/logos/logo-0005-ftd.jpg">
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Raphael Weishaupt</h5>
+											<p class="card-text small">SVP, Brand &amp; Acquisition Marketing<br>
+											<strong>FTD</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+										</div>
+									</div>
+								</div>
+			
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 card tracktype-round-table bg-success my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_013" data-toggle="collapse">
+						<h3 class="card-title">Stop Omnichannel Marketing, Start Identity Marketing Featuring DSW</h3>
+						<h5 class="card-time">2:40 pm - 3:00 pm</h5>
+						<p class="card-moderator">Moderator: <a href="#"><strong>Michael Osborne</strong> - CEO, <strong>SmarterHQ</strong></a></p>
+						<p class="card-speakers">Speakers: <a href="#"><strong>Erica Hermosilla</strong> - Senior Manager, CRM &amp; Loyalty, <strong>DSW</strong></a></p>
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><span class="badge badge-dark">Round Table</span></li>
+						</ul>
+					</div>
+					<div class="collapse" data-parent="#collapse_013" id="collapse_013">
+						<div class="card-body">
+							<p>Consumer browsing and buying habits are nlonger linear: 90% regularly browse online and purchase in-store. Shoppers expect brands tidentify, personalize, and deliver on their needs nmatter
+							how many times they cross digital and physical lines or span touchpoints and devices. Tmeet these expectations, most brands are taking an omnichannel approach tmarketing, but few are 
+							successfully leveraging the right strategies tdeliver experiences customers demand.</p>
+							<p>Join SmarterHQ’s President &amp; CEO, Michael Osborne, for a fireside chat with DSW’s Senior Manager of CRM &amp; Loyalty, Erica Hermosilla. They will discuss:</p>
+							<ul>
+								<li>How DSW leverages identity resolution across in-store and digital tcreate compelling, consistent experiences.</li>
+								<li>Marrying loyalty and behavioral data tdrive better personalization and deepen customer relationships.</li>
+								<li>DSW’s top priorities for 2019.</li>
+							</ul>
+							<div class="row mt-2">
+								<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+									<div class="card">
+										<div class="speaker-image-block">
+											<img class="img-responsive center-block" alt="img" src="img/speakers/michael-osborne.png">
+											<img class="img-responsive center-block" alt="img" src="img/logos/logo-0000-smarterhq.jpg">
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Michael Osborne</h5>
+											<p class="card-text small">CE<br>
+											<strong>SmarterHQ</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+									<div class="card">
+										<div class="speaker-image-block">
+											<img class="img-responsive center-block" alt="img" src="img/speakers/erica-hermosilla.png">
+											<img class="img-responsive center-block" alt="img" src="img/logos/logo-0001-dsw.jpg">
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Erica Hermosilla</h5>
+											<p class="card-text small">Senior Manager, CRM &amp; Loyalty<br>
+											<strong>DSW</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row card bg-danger my-3 p-3">
+				<h4 class="text-secondary my-2" id="Track-D">Track D: Marketing Tomorrow's Customers</h4>
+				<div class="col-md-12 card my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_014" data-toggle="collapse">
+						<h3 class="card-title">Chairperson's Opening Remarks</h3>
+						<h5 class="card-time">2:05 pm - 2:15 pm</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="col-md-12 card tracktype-panel-discussion bg-danger my-2 p-0">
+							<div class="card-header mb-0" data-target="#collapse_015" data-toggle="collapse">
+								<h3 class="card-title">Selling At The Speed Of Social Media Culture: How zulily Works Around The World TStay Ahead Of Memes, Milennials And Instagram</h3>
+								<h5 class="card-time">2:15 pm - 2:40 pm</h5>
+								<p class="card-speakers">Speakers: <a href="#"><strong>Kerry Gibson-Morris</strong> - VP Merchandise, <strong>Zulily</strong></a></p>
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><span class="badge badge-dark">Panel Disccussion</span></li>
+								</ul>
+							</div>
+							<div class="collapse" data-parent="#collapse_015" id="collapse_015">
+								<div class="card-body">
+									<p>There’s nquestion that social media is a key area for retailers looking tgrow their business. But the channels aren’t just a way tsell products tconsumers – trending topics can give
+									retailers an insight intthe consumer zeitgeist and tsee what sells.</p>
+									<p>In this innovative case study, retail veteran and zulily VP of home, hardlines and licensing, Kerry Gibson Morris, discusses how zulily grew t6.1 million active customers by working with
+									global vendors by:</p>
+									<ul>
+										<li>Quickly taking advantage of cultural trends driven by social media and younger customers</li>
+										<li>Highlighting must-have items that are oh-so-Snapchattable , and skyrocket demand from Millennial shoppers…particularly the exploding “DIY” community propagated by Instagram
+										communities</li>
+										<li>How zulily, a billion-dollar etailer based in Seattle, WA, built its own global vendor operations portal tempower a team of merchants and vendors alike tmove quickly and even
+										anticipate trends, and give customers unique goods based on data</li>
+									</ul>
+									<div class="row mt-2">
+									   <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+											<div class="card">
+												<div class="speaker-image-block">
+													<img class="img-responsive center-block" alt="img" src="img/speakers/kerry-gibson-morris.png">
+													<img class="img-responsive center-block" alt="img" src="img/logos/logo-0011-zulily.jpg">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title">Kerry Gibson-Morris</h5>
+													<p class="card-text small">VP Merchandise<br>
+													<strong>Zulily</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="col-md-12 card tracktype-keynote bg-primary my-2 p-0">
+						<div class="card-header mb-0" data-target="#collapse_016" data-toggle="collapse">
+							<h3 class="card-title">When Customer Engagement Means Customer Acquisition</h3>
+							<h5 class="card-time">2:40 pm - 3:00 pm</h5>
+							<p class="card-speakers">Speakers: <a href="#"><strong>Matt Roche</strong> - CEO, <strong>Extole</strong></a></p>
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item"><span class="badge badge-dark">Keynote</span></li>
+							</ul>
+						</div>
+						<div class="collapse" data-parent="#collapse_016" id="collapse_016">
+							<div class="card-body">
+								<p>We all understand marketing and marketing activities through the framework of acquisition, conversion, and retention. It's a familiar and comfortable construct. But what are the new rules
+								when engaging customers means acquiring new ones? With his signature high-energy style, Extole CEMatt Roche throws a wrench in the works by considering what it means when an existing customer
+								drives awareness, encourages a purchase from a new customer, and is herself compelled tbuy again.</p>
+								<div class="row mt-2">
+									<div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+										<div class="card">
+											<div class="speaker-image-block">
+												<img class="img-responsive center-block" alt="img" src="img/speakers/matt-roche.jpg">
+												<img class="img-responsive center-block" alt="img" src="img/logos/logo-0006-extole.jpg">
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">Matt Roche</h5>
+												<p class="card-text small">CE<br>
+												<strong>Extole</strong></p><a class="btn btn-sm btn-primary" href="#">See Bio</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<h4 class="text-secondary my-2">End Of Day Parties</h4>
+				<div class="col-md-12 card tracktype-break-meal bg-warning my-2 p-0">
+					<div class="card-header mb-0" data-target="#collapse_017" data-toggle="collapse">
+						<h3 class="card-title">Fusion Festival Parties</h3>
+						<h5 class="card-time">5:30 pm - 6:45 pm</h5>
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><span class="badge badge-dark">Break Meal</span></li>
+						</ul>
+					</div>
+					<div class="collapse" data-parent="#collapse_017" id="collapse_017">
+						<div class="card-body">
+							<p>Join us for four fun music festival themed parties and end your day with a swing in your step as you enjoy lively tunes, cocktails and tasty appetizers.</p>
+							<ul>
+								<li>Rock Out At Woodstock At Rockwood Grill Hosted By BigCommerce <ul><li>The legendary festival is brought taround our beloved fire pits. </li></ul>
+								</li><li>Bourbon And Blues Fest At Lobby Bar Hosted By Synchrony <ul><li>Kick back &amp; sing the blues with your eTail cronies. </li></ul>
+								</li><li>Gone Country Festival Style At The Pointe Hosted By eShopworld <ul><li>Gcountry &amp; get your boots! We’re going full country out on the Pointe!</li></ul>
+								</li><li>Desert Glow At Costas Hosted By Oracle Marketing Cloud <ul><li>Coachella inspiration happening here —join the desert glow and take your best Insta-moments here.</li></ul>
+							</li></ul>
+						</div>
+					</div>
+				</div>	 
+			</div> 
+ 		</div>
+ 	
+	</div>
+
+	<footer class="bg-dark mt-5 pt-2">
+		<div class="container">
+			<div class="row pt-2">
+				<div class="col-md-8 text-white">
+					<p>ECO2 Agenda Multi-Select Demo V2 &copy; 2019</p>
+  				</div>
+				<div class="col">
+					<ul class="list-unstyled list-inline">
+						<li class="list-inline-item"><a class="text-white" target="_blank" href="https://getbootstrap.com" data-toggle="tooltip" data-placement="top" data-original-title="Version: 4">Bootstrap </a></li>
+						<li class="list-inline-item"><a class="text-white" target="_blank" href="https://fontawesome.io/" data-toggle="tooltip" data-placement="top" data-original-title="Version: 4.6.3">Font Awesome </a></li>
+						<li class="list-inline-item"><a class="text-white" target="_blank" href="https://jquery.com/" data-toggle="tooltip" data-placement="top" data-original-title="Version: 3.4.1">Jquery </a></li>
+ 					</ul>
+ 	 			</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JS -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>
