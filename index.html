@@ -17,9 +17,11 @@
  	<!-- CSS -->	
 	<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABMLAAATCwAAAAAAAAAAAAAAAAAAeTxSAHk6UwJ5PFcJeTtYC3o7WAt5O1gLejtYC3o7WAt6O1gLejtYC3k7WAt6PFcJfzpUAn88UwAAAAAAgD9ZAIA/WRh+PleEfT1Wt3w9Vrp8PVa5fD1WuXw9Vrl8PVa5fD1WuXw9Vrl8PVa6fT1WuH4+V4mAP1gcg0FbAHw/WAN+PliPfT1W/3w9Vv98PVb/eztV/3s7Vf97O1X/eztV/3s8Vf98PVb/fD1W/3w9Vv99PVb/fz5YmX0/VwaBP1kUfj5XyHw9Vv98PVb/f0Fa/41Ta/+OVW3/jlVt/45Vbf+HTGP/fDxW/3s8Vf98PVb/fD1W/34+V9B/PlcZgj9YF34+WMt8PVb/eztU/5Nacv/p3uP/6+Pm/+jd4v/o3eL/5trf/8KjsP+FSGH/ezxV/3w9Vv9+PlfTgD1XG4I/WBZ+PljLfD1W/3o7VP+WXXX/9fHz/7mVo/+VXXT/ll92/7KLmf/28vP/sYqa/3o5U/98PVb/fj5X04A9VxuCP1gWfj5Yy3w9Vv96O1T/ll11//Tw8v+kdYn/djJO/3c1UP+ERV3/6uDj/7+grf96OVP/fD1W/34+V9OAPVcbgj9YFn4+WMt8PVb/ejtU/5Vddf/18PL/yK64/6yBk/+ugpX/xqm0/+rg5P+can//ejpU/3w9Vv9+PlfTgD1XG4I/WBZ+PljLfD1W/3o7VP+VXXX/9fHz/97P1P/Nsr7/0LbC/+7l6f/HqrX/fj5Y/3w9Vv98PVb/fj5X04A9VxuCP1gWfj5Yy3w9Vv96O1T/ll11//Tw8v+md4v/eDRQ/3k2Uv+sgpP/7+jr/5JZcf97O1T/fD1W/34+V9OAPVcbgj9YFn4+WMt8PVb/ejtU/5Zddf/18fP/uJSi/5Nbcv+VXnT/xKey//Tv8f+UW3T/eztU/3w9Vv9+PlfTgD1XG4I/WBZ+PljLfD1W/3s7VP+TWnL/6uDk/+zk5//p3uL/6d/j/+ne4/+7maf/gEFa/3w9Vv98PVb/fj5X04A9VxuBP1gWfj5Xynw9Vv98PVb/gEFb/45TbP+QVW7/kFVv/49Vb/+JTWb/fT1W/3w9Vv98PVb/fD1W/34+V9KAPVcafz1ZCH4+V6h8PVb/fD1W/3w9Vv97O1X/eztU/3s7VP97O1T/ezxV/3w9Vv98PVb/fD1W/3w9Vv9+Pleyfz5XDIRAWQCAP1kyfj5XuX09VuJ8PVbkfD1W43w9VuN8PVbjfD1W43w9VuN8PVbjfD1W5H09VuJ+Ple9fz9YOYNCXQB1OlsAAAD/AH0+VxJ9PlYrfT1WLX09Vi19PVYtfT1WLX09Vi19PVYtfT1WLX09Vi19PlYrfj9XE4JHUgB+QFQAwAMAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAgAEAAA==" />	
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
  	<link href="css/open-sans.css" rel="stylesheet" type="text/css">
- 	<link href="style.css" rel="stylesheet" type="text/css">
+  	<link href="style.css" rel="stylesheet" type="text/css">
+ 	
 </head>
 <body>
  
@@ -44,15 +46,15 @@
 
 	<div id="filter-menu" hidden>
 		<div class="container mt-5 py-5">
-			<div class="row mt-3">
+			<div class="row mt-4">
 				<div class="col-md-8 offset-md-2 pb-5">
  				  	<form>
 						<div class="form-group pt-3">
  							<h4 class="text-center text-white">Filter & Sort Session Options  <a class="ml-5 pt-5 fa-lg filter_button"><i class="fa fa-times-circle" aria-hidden="true"></i></a></h4>
  							<label class="text-bold text-white">Expand &amp; View Session Details</label>
 							<ul class="list-unstyled">
-								<li class="mb-2 px-4"><a class="bg-secondary text-white px-3 py-2 m-2" href="#" id="toggle">+ Expand All Session Details</a></li>
-							</ul>
+ 								<li class="py-2"><a class="bg-secondary text-white px-3 py-2 m-2" id="toggle">+ Expand All Session Details</a></li>
+ 							</ul>
 							<label class="text-bold text-white">Sort Sesssion Formats</label>
 			  				<div class="filter-menu">
 								<label class="bg-primary px-3 py-2 m-2 text-white" for="bg-info">Keynotes <input type="checkbox" name="group1" value="tracktype-keynote" checked></label> 
@@ -88,19 +90,26 @@
 		   			<h1>Day Two: Revolutionizing Retail Experiences </h1>
 					<h3>February 20th, 2019</h3>
 					<p>It’s time for the main event. Our speakers are revolutionizing retail, and share their tactics around growth, disruption and unified commerce. Here you’ll gain fresh ideas treally drive sustainable growth for your retail.</p>	
- 				   </div>
-				<div class="col-md-12 agenda-day-nav">
-					<ul class=" nav justify-content-center">
-						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2" href="#">SEARCH</a></li>
-						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2" href="#">EMAIL + RETENTION </a></li>
-						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2" href="#">TECH </a></li>
-						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2" href="#">UX + Merchandising  </a></li>
-						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2 active" href="#">Day Two</a></li>
-						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2" href="#">Day Three</a></li>
-						<li class="list-inline-item"><a class="nav-link btn btn-sm btn-primary mb-2" href="#">Day Four</a> </li>
-						<li class="list-inline-item ml-5 mb-2 pl-5"><a class="btn btn-secondary text-white ml-5 filter_button">Filters <i class="fa fa-th" aria-hidden="true"></i></a></li>
-					</ul>
 				</div>
+			</div>
+			<div class="agenda-day-nav">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="input-group">
+							<select class="selectpicker" multiple title="Day Two: Revolutionizing Retail Experiences: February 20th, 2019">
+								<option>Transform SEARCH Summit: February 19th, 2019</option>
+								<option>Transform EMAIL + RETENTION Summit: February 19th, 2019</option>
+								<option>Transform UX + Merchandising Summit: February 19th, 2019</option>
+								<option disabled>Day Two: Revolutionizing Retail Experiences: February 20th, 2019</option>
+								<option>Day Three: Digital And Omni Success: February 21st, 2019</option>
+								<option>Day Four: Future Tech, AI, Mobile, And Immersive Media: February 22nd, 2019</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<a class="btn btn-secondary text-white filter_button">Filters <i class="fa fa-th" aria-hidden="true"></i></a> 
+					</div>
+				</div>	
 			</div>
 		</div>
  
@@ -622,8 +631,8 @@
 							</div>
 							<div class="collapse" data-parent="#collapse_015" id="collapse_015">
 								<div class="card-body">
-									<p>There’s nquestion that social media is a key area for retailers looking tgrow their business. But the channels aren’t just a way tsell products tconsumers – trending topics can give
-									retailers an insight intthe consumer zeitgeist and tsee what sells.</p>
+									<p>There’s nquestion that social media is a key area for retailers looking to grow their business. But the channels aren’t just a way to sell products to consumers – trending topics can give
+									retailers an insight in to the consumer zeitgeist and to see what sells.</p>
 									<p>In this innovative case study, retail veteran and zulily VP of home, hardlines and licensing, Kerry Gibson Morris, discusses how zulily grew t6.1 million active customers by working with
 									global vendors by:</p>
 									<ul>
@@ -719,14 +728,15 @@
 	<footer class="bg-dark mt-5 pt-2">
 		<div class="container">
 			<div class="row pt-2">
-				<div class="col-md-8 text-white">
+				<div class="col-md-7 text-white">
 					<p>ECO2 Agenda Multi-Select Demo V2 &copy; 2019</p>
   				</div>
 				<div class="col">
 					<ul class="list-unstyled list-inline">
 						<li class="list-inline-item"><a class="text-white" target="_blank" href="https://getbootstrap.com" data-toggle="tooltip" data-placement="top" data-original-title="Version: 4">Bootstrap </a></li>
+						<li class="list-inline-item"><a class="text-white" target="_blank" href="https://developer.snapappointments.com/bootstrap-select/" data-toggle="tooltip" data-placement="top" data-original-title="Version: 3.4.1">Bootstrap-select </a></li>
 						<li class="list-inline-item"><a class="text-white" target="_blank" href="https://fontawesome.io/" data-toggle="tooltip" data-placement="top" data-original-title="Version: 4.6.3">Font Awesome </a></li>
-						<li class="list-inline-item"><a class="text-white" target="_blank" href="https://jquery.com/" data-toggle="tooltip" data-placement="top" data-original-title="Version: 3.4.1">Jquery </a></li>
+						<li class="list-inline-item"><a class="text-white" target="_blank" href="https://jquery.com/" data-toggle="tooltip" data-placement="top" data-original-title="Version: 1.13.2">Jquery </a></li>
  					</ul>
  	 			</div>
 			</div>
@@ -737,6 +747,7 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
 	<script src="js/scripts.js"></script>
 
 </body>
