@@ -59,11 +59,11 @@ $('.filter_button').on('click', function() {
  
 // Reset Menu Buttons
 $('.session-type-button-reset').click(function() {
-	$(".card").attr('hidden',false);
+	$(".card[class*='session-type-']").attr('hidden',false);
     $('input[type=checkbox][name=sort-session-type]').prop('checked', true);
 });
 $('.session-topic-button-reset').click(function() {
-	$(".card").attr('hidden',false);
+	$(".card.sort-session-topic").attr('hidden',false);
     $('input[type=checkbox][name=sort-session-topic]').prop('checked', true);
 });
   
