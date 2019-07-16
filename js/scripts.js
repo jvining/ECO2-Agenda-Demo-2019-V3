@@ -26,11 +26,11 @@ $(document).ready(function() {
 	$('#toggle').click(function() {
 		if ($('#content .collapse').hasClass('show')) {
 			$('#content .collapse').removeClass('show');
-			$('#toggle').html('+ Expand All Session Details');
+			$('#toggle').html('Sessions Details +');
 			$('.card-header').children('i').removeClass('fa-minus').addClass('fa-plus');
  		} else {
 			$('#content .collapse').addClass('show');
-			$('#toggle').html('- Collapse All Session Details');
+			$('#toggle').html('Sessions Details -');
 			$('.card-header').children('i').removeClass('fa-plus').addClass('fa-minus');
  		}
 	});
