@@ -51,45 +51,40 @@
  				  	<form>
 						<div class="form-group pt-3">
 							<h3 class="text-white">Filtering  Session Options <a class="pull-right filter_button"><i class="fa fa-times-circle" aria-hidden="true"></i></a></h3>
-							<label class="text-bold text-white">Jump to Event Day</label>
-							<div class="input-group mb-2">
-								<select class="selectpicker" title="Day Two: Revolutionizing Retail Experiences: February 20th, 2019">
-									<option>Transform SEARCH Summit: February 19th, 2019</option>
-									<option>Transform EMAIL + RETENTION Summit: February 19th, 2019</option>
-									<option>Transform UX + Merchandising Summit: February 19th, 2019</option>
-									<option disabled>Day Two: Revolutionizing Retail Experiences: February 20th, 2019</option>
-									<option>Day Three: Digital And Omni Success: February 21st, 2019</option>
-									<option>Day Four: Future Tech, AI, Mobile, And Immersive Media: February 22nd, 2019</option>
-								</select>
-							</div>
-							<label class="text-bold text-white">Filter By Session Formats</label>
+ 							<label class="text-bold text-white">Filter By Session Formats</label>
 			  				<div class="filter-menu">
-								<label class="bg-info px-3 py-2 m-2 text-white">Keynotes <input type="checkbox" name="sort-session-type" value="session-type-keynote" checked></label> 
-								<label class="bg-info px-3 py-2 m-2 text-white">Round Tables <input type="checkbox" name="sort-session-type" value="session-type-round-table" checked></label>
-								<label class="bg-info px-3 py-2 m-2 text-white">Panel Discussions <input type="checkbox" name="sort-session-type" value="session-type-panel-discussion" checked></label>
-								<label class="bg-info px-3 py-2 m-2 text-white">Break / Meal  <input type="checkbox" name="sort-session-type" value="session-type-break-meal" checked></label>
-								<br/>
+								<ul class="list-unstyled">
+									<li><label class="bg-info px-3 py-2 m-2 text-white">Keynotes <input type="checkbox" name="sort-session-type" value="session-type-keynote" checked></label> </li>
+									<li><label class="bg-info px-3 py-2 m-2 text-white">Round Tables <input type="checkbox" name="sort-session-type" value="session-type-round-table" checked></label></li>
+									<li><label class="bg-info px-3 py-2 m-2 text-white">Panel Discussions <input type="checkbox" name="sort-session-type" value="session-type-panel-discussion" checked></label></li>
+									<li><label class="bg-info px-3 py-2 m-2 text-white">Break / Meal  <input type="checkbox" name="sort-session-type" value="session-type-break-meal" checked></label></li>
+								</ul>
 								<label class="bg-secondary px-3 py-2 m-2 text-white"><a class="session-type-button-reset">Reset</a></label>
 							</div>
 							<label class="text-bold text-white">Filter By Session Topic</label>
 			  				<div class="filter-menu">
-								<label class="bg-danger px-3 py-2 m-2 text-white">Marketplaces &amp; Globalization <input type="checkbox" name="sort-session-topic" value="marketplaces-and-globalization" checked></label> 
-								<label class="bg-danger px-3 py-2 m-2 text-white">Reimagining Online And Instore <input type="checkbox" name="sort-session-topic" value="reimagining-online-and-instore" checked></label> 
-								<label class="bg-danger px-3 py-2 m-2 text-white">Customer Acquisition And Conversion Optimization <input type="checkbox" name="sort-session-topic" value="customer-acquisition-and-conversion-optimization" checked></label> 
-								<label class="bg-danger px-3 py-2 m-2 text-white">Marketing Tomorrow's Customers <input type="checkbox" name="sort-session-topic" value="marketing-tomorrows-customers" checked></label> 
-								<br/>
+								<ul class="list-unstyled">
+									<li><label class="bg-danger px-3 py-2 m-2 text-white">Marketplaces &amp; Globalization <input type="checkbox" name="sort-session-topic" value="marketplaces-and-globalization" checked></label> </li>
+									<li><label class="bg-danger px-3 py-2 m-2 text-white">Reimagining Online And Instore <input type="checkbox" name="sort-session-topic" value="reimagining-online-and-instore" checked></label> </li>
+									<li><label class="bg-danger px-3 py-2 m-2 text-white">Customer Acquisition And Conversion Optimization <input type="checkbox" name="sort-session-topic" value="customer-acquisition-and-conversion-optimization" checked></label> </li>
+									<li><label class="bg-danger px-3 py-2 m-2 text-white">Marketing Tomorrow's Customers <input type="checkbox" name="sort-session-topic" value="marketing-tomorrows-customers" checked></label> </li>
+								</ul>
 								<label class="bg-secondary px-3 py-2 m-2 text-white"><a class="session-topic-button-reset">Reset</a></label>
  							</div>
-							<label class="text-bold text-white">Scroll to Track</label>
-							<ul class="list-unstyled">
-								<li><a class="scroll" data-offset="220" href="#Track-A"><label class="bg-primary px-3 py-2 m-2 text-white">Marketplaces &amp; Globalization</label> </a></li>
-								<li><a class="scroll" data-offset="220" href="#Track-B"><label class="bg-danger px-3 py-2 m-2 text-white">Reimagining Online And Instore</label> </a></li>
-								<li><a class="scroll" data-offset="220" href="#Track-C"><label class="bg-warning px-3 py-2 m-2 text-white">Customer Acquisition And Conversion Optimization</label> </a></li>
-								<li><a class="scroll" data-offset="220" href="#Track-D"><label class="bg-success px-3 py-2 m-2 text-white">Marketing Tomorrow's Customers</label> </a></li>
-							</ul>
-							<ul class="list-unstyled mt-3">
-								<li class="py-2"><a class="bg-secondary text-white px-3 py-2 m-2 scroll" data-offset="220" href="#content">Back to Top</a></li>
-							</ul>
+							
+							<!-- Scroll to Track Nav: Hidden for demonstration
+ 								<label class="text-bold text-white">Scroll to Track</label>
+								<ul class="list-unstyled">
+									<li><a class="scroll" data-offset="220" href="#Track-A"><label class="bg-primary px-3 py-2 m-2 text-white">Marketplaces &amp; Globalization</label> </a></li>
+									<li><a class="scroll" data-offset="220" href="#Track-B"><label class="bg-danger px-3 py-2 m-2 text-white">Reimagining Online And Instore</label> </a></li>
+									<li><a class="scroll" data-offset="220" href="#Track-C"><label class="bg-warning px-3 py-2 m-2 text-white">Customer Acquisition And Conversion Optimization</label> </a></li>
+									<li><a class="scroll" data-offset="220" href="#Track-D"><label class="bg-success px-3 py-2 m-2 text-white">Marketing Tomorrow's Customers</label> </a></li>
+								</ul>
+								<ul class="list-unstyled mt-3">
+									<li class="py-2"><a class="bg-secondary text-white px-3 py-2 m-2 scroll" data-offset="220" href="#content">Back to Top</a></li>
+								</ul>
+ 							END Scroll to Track Nav -->
+							
 						</div>
 					</form>
 				</div>
@@ -265,7 +260,7 @@
  
  			<div class="row">
 				<div class="col-md-4 pl-md-0">
-					<div class="col-md-12 card session-type-keynote my-2 p-0">
+					<div class="col-md-12 card session-type-keynote my-2 p-0 bg-primary">
 						<div class="card-header mb-0" data-target="#collapse_13a" data-toggle="collapse"> 
 							<h3 class="card-title">How Holland America is Using Machine Learning to Deliver Extreme Personalization</h3>
 							<h5 class="card-time">10:15 AM - 11:50 PM</h5>
@@ -284,7 +279,7 @@
 				</div>
 	
 				<div class="col-md-4 p-md-0">
-					<div class="col-md-12 card session-type-panel-discussion   my-2 p-0">
+					<div class="col-md-12 card session-type-panel-discussion my-2 p-0 bg-danger">
 						<div class="card-header mb-0" data-target="#collapse_13b" data-toggle="collapse"> 
 							<h3 class="card-title">Ending Retail’s Violent Silence</h3>
 							<h5 class="card-time">10:15 AM - 11:50 PM</h5>
@@ -305,7 +300,7 @@
 				</div>
   
 				<div class="col-md-4 pr-md-0">
-					<div class="col-md-12 card session-type-round-table   my-2 p-0">
+					<div class="col-md-12 card session-type-round-table my-2 p-0 bg-warning">
 						<div class="card-header mb-0" data-target="#collapse_13c" data-toggle="collapse"> 
 							<h3 class="card-title">Activity Is Brand: Customer Engagement Is The Essential Measure Of Brand</h3>
 							<h5 class="card-time">10:15 AM - 11:50 PM</h5>
