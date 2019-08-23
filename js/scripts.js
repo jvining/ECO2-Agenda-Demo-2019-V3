@@ -59,7 +59,7 @@ $('.filter_button').on('click', function() {
  
 // Reset Menu Buttons
 $('.session-type-button-reset').click(function() {
-	$(".card[class*='session-type-']").attr('hidden',false);
+	$(".card[class*='session-type-']").parent().attr('hidden',false);
     $('input[type=checkbox][name=sort-session-type]').prop('checked', true);
 });
 $('.session-topic-button-reset').click(function() {
@@ -82,16 +82,16 @@ $.fn.toggleAttr = function(attr, val) {
 $(document).ready(function() {
     $('input[type=checkbox][name=sort-session-type]').on('change', function()  {
  		if (this.value =='session-type-keynote'){
-			$('.card.session-type-keynote').toggleAttr('hidden', "true");
+			$('.card.session-type-keynote').parent().toggleAttr('hidden', "true");
 		} 
 		if (this.value =='session-type-round-table'){
-			$('.card.session-type-round-table').toggleAttr('hidden', "true");
+			$('.card.session-type-round-table').parent().toggleAttr('hidden', "true");
 		} 
 		if (this.value =='session-type-panel-discussion'){
-			$('.card.session-type-panel-discussion').toggleAttr('hidden', "true");
+			$('.card.session-type-panel-discussion').parent().toggleAttr('hidden', "true");
 		} 
 		if (this.value =='session-type-break-meal'){
-			$('.card.session-type-break-meal').toggleAttr('hidden', "true");
+			$('.card.session-type-break-meal').parent().toggleAttr('hidden', "true");
 		} 
  	});
 });
