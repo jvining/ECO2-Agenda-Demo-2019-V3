@@ -37,7 +37,7 @@ body [class*="col-"] {color:#5f5f5f; font-size:16px; line-height:1.75em;}
 
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){width:100%; border:1px #ddd solid; border-radius:6px;}
 
-#filter-menu{height:100%;width: 50vh;position:fixed;top:0;left:0;overflow-x:hidden;background:rgba(33, 37, 41, .9);transition:0.5s;z-index: 1020;box-shadow: 0 3px 10px 1px rgba(0,0,0,.3)!important;}
+#filter-menu{height:100%;width: 60%;max-width: 750px;position:fixed;top:0;left:0;overflow-x:hidden;background:rgba(33, 37, 41, .9);transition:0.5s;z-index: 1020;box-shadow: 0 3px 10px 1px rgba(0,0,0,.3)!important;}
 #filter-menu a:hover{text-decoration:none; cursor:pointer;}
 @media(max-width:1100px){.on-scroll-agenda{z-index:1015;} #filter-menu{width:100vw; z-index:1020;}}
 

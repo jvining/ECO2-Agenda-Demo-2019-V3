@@ -83,7 +83,7 @@ $(document).ready(function() {
     $('input[type=checkbox][name=sort-session-type]').on('change', function()  {
  		if (this.value =='session-type-keynote'){
 			$('.card.session-type-keynote').parent().toggleAttr('hidden', "true");
-		} 
+ 		} 
 		if (this.value =='session-type-round-table'){
 			$('.card.session-type-round-table').parent().toggleAttr('hidden', "true");
 		} 
