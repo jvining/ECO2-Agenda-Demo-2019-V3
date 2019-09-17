@@ -5,7 +5,7 @@ Description: ECO2 Agenda Demo 2019 V3, built on Starter Bootstrap Template (http
 Author: Joshua Vining
 Author URI: https://github.com/jvining
 */
-
+* {min-height: 0.01px;}
 body {background:#fbfbfb; font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
 body h1, body h2, body h3, body h4, body h5 {font-weight:400;}
 body [class*="col-"] {color:#222; font-size:16px; line-height:1.75em;}
