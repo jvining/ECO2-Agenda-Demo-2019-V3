@@ -63,5 +63,3 @@ body [class*="col-"] {color:#222; font-size:16px; line-height:1.75em;}
 #agenda-day-container .speaker-image-block{height:198px;width:198px; overflow:hidden; display:block; margin:0 auto; position:inherit;}
 #agenda-day-container .speaker-image-block > img:first-of-type{transition: all 0.3s ease;}
 #agenda-day-container .speaker-image-block:hover > img:first-of-type{margin-top:-235px; transition: all 0.3s ease;}
-
- 
